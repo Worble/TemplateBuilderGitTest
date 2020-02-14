@@ -1,0 +1,43 @@
+[
+	{
+		"promptType": "Int",
+		"id": "someOption",
+		"message": "Number between 1 and 10"
+	},
+	{
+		"promptType": "Boolean",
+		"id": "question",
+		"message": "Answer Yes or No",
+		"defaultValue": true
+	},
+	{
+		"promptType": "String",
+		"id": "projectName",
+		"message": "What is your project name",
+		"defaultValue": "myproject"
+	},
+	{
+		"promptType": "String",
+		"id": "WhenTest",
+		"message": "This is only viewable when question is true",
+		"defaultValue": "When Test",
+		"when": [{
+			"id": "question",
+			"is": true
+		}]
+	},
+	{
+		"promptType": "String",
+		"id": "WhenTestTwo",
+		"message": "This is only viewable when question is true and someOption is 1",
+		"defaultValue": "When Test 2",
+		"when": [{
+			"id": "question",
+			"is": true
+		},
+		{
+			"id": "someOption",
+			"is": 1
+		}]
+	}
+]

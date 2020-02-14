@@ -1,0 +1,14 @@
+{
+	"files": [
+		{
+			"glob": "*.html",
+			"variables": ["someOption"]
+		},
+		{
+			"glob": "test/{{projectName}}/*.css"
+		}{{#question}},{	
+			"glob": "test/javascript.js",
+			"variables": ["someOption"]
+		}{{/question}}
+	]
+}
